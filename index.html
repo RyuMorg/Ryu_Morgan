@@ -1,1 +1,75 @@
-<h1> Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mock_api.js" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./albums.json" />
+    <title>Neuroflow Project</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Neuroflow Table Project</h1>
+      <h2>by Ryu Morgan</h2>
+    </header>
+    <!-- head of table including given data -->
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Band</th>
+          <th>Album</th>
+          <th>Genres</th>
+          <th>Last Played</th>
+          <th>Date Released</th>
+        </tr>
+      </thead>
+
+      <!-- table of values in json file -->
+      <tbody id="data"></tbody>
+      <tfoot id="data2"></tfoot>
+    </table>
+
+    <script src="mock_api.js"></script>
+    <script>
+      /*
+      //initiating the headers as variables
+      let Band,
+        Album,
+        Genres,
+        Last_Played,
+        Date_Released = [];
+
+      //main object var
+      let main_Data = {};
+
+      //iterating through the created categories to output the name and value of the category
+      function output_Data() {
+        for (let categories in main_Data) {
+          console.log(categories);
+          console.log(main_Data[categories]);
+        }
+      }
+
+      //gaining access to the json data
+      fetch('./albums.json')
+        .then(function (resp) {
+          return resp.json();
+        })
+        .then(function (data) {
+          console.log(data);
+
+          //created variables assigned to json data categories
+          Band = data.band_name;
+          Album = data.album_title;
+          Genres = data.genres;
+          Last_Played = data.last_listened;
+          Date_Released = data.release_date;
+          main_Data = data;
+          output_Data();
+        });
+        */
+    </script>
+  </body>
+</html>
